@@ -1,0 +1,60 @@
+//
+//  ContentView.swift
+//  MyWorld
+//
+//  Created by Anish Palakurthi on 10/12/21.
+//
+
+import SwiftUI
+import FirebaseAuth
+import Firebase
+    
+
+struct ContentView: View {
+    
+    init() {
+           FirebaseApp.configure()
+       }
+    
+    @ObservedObject var userAuth: UserAuth = UserAuth()
+    @ViewBuilder
+    var body: some View{
+        
+        if !userAuth.isLoggedin{
+            
+                NavigationView{
+                    VStack{
+                        Login().environmentObject(userAuth)
+                    }
+                }
+                .navigationBarHidden(true)
+            }
+        else {
+            Homescreen()
+        }
+
+}
+}
+
+class UserAuth: ObservableObject {
+    @Published var isLoggedin = false     // published property to update view
+
+    func login() {
+        // login request... on success:
+        self.isLoggedin = true
+    }
+
+    func logout() {
+        // login request... on success:
+        self.isLoggedin = false
+    }
+}
+
+struct ContentView_Previews: PreviewProvider{
+    static var previews: some View{
+        ContentView()
+    }
+}
+
+
+
