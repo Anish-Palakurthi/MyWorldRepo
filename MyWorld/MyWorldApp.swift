@@ -11,7 +11,6 @@ import Firebase
 
 @main
 struct MyWorldApp: App {
-    @UIApplicationDelegateAdaptor(Appdelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
             ContentView()
