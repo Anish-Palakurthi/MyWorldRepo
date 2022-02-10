@@ -15,13 +15,9 @@ struct Feed: View {
                     Post()
                         .foregroundColor(.white)
                         .font(.largeTitle)
-                        .frame(width: 200, height: 200)
-                        .background(Color.red)
                 }
             }
         }
-        .frame(height: 350)
-        Text("hi")
     }
 }
 
