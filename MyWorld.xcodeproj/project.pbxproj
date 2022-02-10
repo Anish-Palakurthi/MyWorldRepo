@@ -23,6 +23,8 @@
 		1ACE899D27B55D8B00C0FE2A /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE899C27B55D8B00C0FE2A /* HomeButton.swift */; };
 		1ACE899F27B55DE100C0FE2A /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE899E27B55DE100C0FE2A /* SettingsButton.swift */; };
 		1ACE89A127B55E1C00C0FE2A /* LogoIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE89A027B55E1C00C0FE2A /* LogoIcon.swift */; };
+		1ACE89A327B5609C00C0FE2A /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE89A227B5609C00C0FE2A /* Feed.swift */; };
+		1ACE89A527B560E600C0FE2A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE89A427B560E600C0FE2A /* Post.swift */; };
 		1AD0B71B2715D39E0009ACFC /* MyWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0B71A2715D39E0009ACFC /* MyWorldApp.swift */; };
 		1AD0B71D2715D39E0009ACFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0B71C2715D39E0009ACFC /* ContentView.swift */; };
 		1AD0B71F2715D3A10009ACFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD0B71E2715D3A10009ACFC /* Assets.xcassets */; };
@@ -75,6 +77,8 @@
 		1ACE899C27B55D8B00C0FE2A /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
 		1ACE899E27B55DE100C0FE2A /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
 		1ACE89A027B55E1C00C0FE2A /* LogoIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoIcon.swift; sourceTree = "<group>"; };
+		1ACE89A227B5609C00C0FE2A /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		1ACE89A427B560E600C0FE2A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1AD0B7172715D39E0009ACFC /* MyWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD0B71A2715D39E0009ACFC /* MyWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorldApp.swift; sourceTree = "<group>"; };
 		1AD0B71C2715D39E0009ACFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				1A4DF144278F3BBD002805DA /* Homescreen.swift */,
 				1ACE899C27B55D8B00C0FE2A /* HomeButton.swift */,
 				1ACE899A27B55C6B00C0FE2A /* ProfilePicture.swift */,
+				1ACE89A227B5609C00C0FE2A /* Feed.swift */,
+				1ACE89A427B560E600C0FE2A /* Post.swift */,
 				1A5E8F8427A85EE10033CB43 /* ProfilePage.swift */,
 				1ACE89A027B55E1C00C0FE2A /* LogoIcon.swift */,
 				1AE0D67E27B3186000CDC1E8 /* Settings.swift */,
@@ -365,9 +371,11 @@
 				1ACE899B27B55C6B00C0FE2A /* ProfilePicture.swift in Sources */,
 				1AE16219279B0C01007FE4BF /* AddCard.swift in Sources */,
 				1A11EBE2275FC79A00F34AD9 /* ImagePicker.swift in Sources */,
+				1ACE89A527B560E600C0FE2A /* Post.swift in Sources */,
 				1AC13D0E2762A100006E3A4C /* UploadImage.swift in Sources */,
 				1ACE899F27B55DE100C0FE2A /* SettingsButton.swift in Sources */,
 				1A5E8F8527A85EE10033CB43 /* ProfilePage.swift in Sources */,
+				1ACE89A327B5609C00C0FE2A /* Feed.swift in Sources */,
 				1AD0B71D2715D39E0009ACFC /* ContentView.swift in Sources */,
 				1A4DF145278F3BBD002805DA /* Homescreen.swift in Sources */,
 				1AD0B71B2715D39E0009ACFC /* MyWorldApp.swift in Sources */,

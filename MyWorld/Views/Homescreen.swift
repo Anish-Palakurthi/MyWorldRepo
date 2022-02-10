@@ -28,7 +28,7 @@ struct Homescreen: View {
                     Spacer()
                 }
             }
-            
+            Feed()
             Spacer()
             HStack{
                 TabView{

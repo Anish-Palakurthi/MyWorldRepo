@@ -24,13 +24,13 @@ struct ContentView: View {
             
                 NavigationView{
                     VStack{
-                        Login().environmentObject(userAuth)
+                        Homescreen()
                     }
                 }
                 .navigationBarHidden(true)
             }
         else {
-            Homescreen()
+            Register()
         }
 }
 }
