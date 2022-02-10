@@ -26,10 +26,7 @@ struct Login: View {
                 Spacer(minLength: 0)
             }
             .padding()
-            Image("Logo")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 200, height: 200, alignment: .center)
+            LogoIcon()
             
             HStack(spacing: 15){
                 TextField("1", text: $loginData.code)
