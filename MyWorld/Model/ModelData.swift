@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import Firebase
 
-var posts: [PostModel] = load("postsData.json")
+var posts: [PostModel] = load("sample.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
