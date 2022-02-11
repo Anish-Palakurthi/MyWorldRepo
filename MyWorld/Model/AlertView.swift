@@ -29,7 +29,6 @@ func alertView(msg: String, completion: @escaping (String) -> ()){
         }
         completion(code)
         
-        
     }))
     
     UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true)
