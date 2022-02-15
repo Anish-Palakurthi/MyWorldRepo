@@ -94,7 +94,7 @@ struct Register: View {
                     .clipShape(Capsule())
             })
             
-            .disabled(registerData.zipcode == "" ||  registerData.name == "" ? true : false)
+            .disabled(registerData.zipcode == "" || registerData.name == "" ? true : false)
             .opacity(registerData.zipcode == "" || registerData.name == "" ? 0.5 : 1)
             Spacer(minLength: 0)
         }

@@ -49,13 +49,13 @@ struct AddCard: View {
                 
         }
             Spacer()
-            Text("MyWorld calculates the carbon cost of your credit card purchases and then presents alternative products and services with lower carbon footprints.")
+            Text("MyWorld calculates the carbon cost of your credit card purchases and presents alternative products and services of lower carbon footprints.")
                 .font(Font.custom("Quicksand", size: 20))
                 .padding()
                 
                 
             Spacer()
-            Text("Honest Disclaimer: We do not track or store any of your data. It simply passes through a calculator and provides a corresponding carbon value. Ideally, this would be incorporated into a banking app as a widget of sorts.")
+            Text("Ideally, this would be incorporated into a banking app as a widget of sorts as there would be less fear of handing your data away to someone who already manages it.")
                 .font(Font.custom("Quicksand", size: 20))
                 .padding()
             Spacer()
@@ -79,8 +79,8 @@ struct AddCard: View {
                     .clipShape(Capsule())
             })
             
-            .disabled(cardData.cardNumber == "" ? true : false)
-            .opacity(cardData.cardNumber == "" ? 0.5 : 1)
+            //.disabled(cardData.cardNumber == "" ? true : false)
+            //.opacity(cardData.cardNumber == "" ? 0.5 : 1)
             
             
         }

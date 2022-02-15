@@ -15,6 +15,7 @@ class CardModel : ObservableObject{
     //@StateObject var user = UserModel(username: "sample", pic: "sample", zipcode: 5)
     @Published var cardNumber = ""
     @Published var cardFilled = false
+    @Published var userInit = false
     
     @Published var errorMsg = ""
     @Published var error = false
@@ -22,19 +23,21 @@ class CardModel : ObservableObject{
     
     let ref = Firestore.firestore()
     
-    @AppStorage("current_status") var status = false
+    @AppStorage("Current Status") var status = false
     
     @Published var isLoading = false
     
     
     func newCard()
     {
+        self.cardFilled.toggle()
+        self.userInit = true
         isLoading = true
         
-        Auth.auth().settings?.isAppVerificationDisabledForTesting = true
+        //Auth.auth().settings?.isAppVerificationDisabledForTesting = true
         
         let uid = Auth.auth().currentUser!.uid
-        self.cardFilled.toggle()
+      
         ref.collection("Users").whereField("uid", arrayContains: uid).getDocuments{
             (snap, err) in
             
