@@ -12,6 +12,15 @@ import Firebase
 
 struct ContentView: View {
     
+    var status = false
+    var body: some View{
+        NavigationView{
+            VStack{
+                Login()
+            }
+        }
+    }
+    /*
     init() {
            FirebaseApp.configure()
        }
@@ -48,11 +57,11 @@ class UserAuth: ObservableObject {
         self.isLoggedin = false
     }
 }
-
+*/
 struct ContentView_Previews: PreviewProvider{
     static var previews: some View{
         ContentView()
     }
 }
 
-
+}
