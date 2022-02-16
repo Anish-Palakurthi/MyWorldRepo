@@ -32,7 +32,7 @@ struct Homescreen: View {
             Spacer()
             HStack{
                 TabView{
-                    Homescreen()
+                    Spacer()
                         .tabItem{
                             HomeButton()
                                 .onTapGesture(perform:{
@@ -41,6 +41,7 @@ struct Homescreen: View {
                                 }
                                 )
                         }
+                    Spacer()
                     ProfilePage()
                         .tabItem{
                             ProfilePicture()
