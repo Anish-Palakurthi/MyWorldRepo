@@ -4,7 +4,6 @@
 //
 //  Created by Anish Palakurthi on 1/12/22.
 //
-
 import SwiftUI
 
 struct Homescreen: View {
@@ -12,11 +11,10 @@ struct Homescreen: View {
     @StateObject var homeData = HomeScreenModel()
     var body: some View {
         VStack{
-            HStack{
+            //HStack{
                 TabView{
-                    Spacer()
-                    Spacer()
-                    Spacer()
+                    //Spacer()
+                    //Spacer()
                     Spacer()
                     Settings()
                         .tabItem{
@@ -26,12 +24,14 @@ struct Homescreen: View {
                                 })
                         }
                     Spacer()
-                }
+                //}
             }
             Feed()
             Spacer()
             HStack{
+               
                 TabView{
+                    Spacer()
                     Spacer()
                         .tabItem{
                             HomeButton()
@@ -51,7 +51,9 @@ struct Homescreen: View {
                                         
                                     })
                         }
+                    Spacer()
                 }
+               
             }
             Spacer()
         }
@@ -68,4 +70,3 @@ struct Homescreen_Previews: PreviewProvider {
         Homescreen()
     }
 }
-

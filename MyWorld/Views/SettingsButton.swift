@@ -9,11 +9,13 @@ import SwiftUI
 
 struct SettingsButton: View {
     var body: some View {
+        ZStack{
         Image(systemName: "gearshape")
             .resizable()
             .aspectRatio(contentMode: .fill)
             .frame(width: 30, height: 30)
     }
+}
 }
 
 struct SettingsButton_Previews: PreviewProvider {
