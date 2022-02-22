@@ -11,55 +11,46 @@ struct Homescreen: View {
     @StateObject var homeData = HomeScreenModel()
     var body: some View {
         VStack{
-            //HStack{
-                TabView{
-                    //Spacer()
-                    //Spacer()
-                    Spacer()
-                    Settings()
-                        .tabItem{
-                            SettingsButton()
-                                .onTapGesture(perform: {
-                                    homeData.goSettings()
-                                })
-                        }
-                    Spacer()
-                //}
+            HStack{
+   
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                NavigationLink(destination: Settings()) {
+                    SettingsButton()
+                }
+                .navigationTitle("Settings")
+            
+            Spacer()
             }
+            
             Feed()
             Spacer()
             HStack{
-               
-                TabView{
-                    Spacer()
-                    Spacer()
-                        .tabItem{
-                            HomeButton()
-                                .onTapGesture(perform:{
-                                    homeData.refreshHome()
-                                    
-                                }
-                                )
-                        }
-                    Spacer()
-                    ProfilePage()
-                        .tabItem{
-                            ProfilePicture()
-                                .onTapGesture(
-                                    perform:{
-                                        homeData.goProfile()
-                                        
-                                    })
-                        }
-                    Spacer()
-                }
-               
+                
+                
+                Spacer()
+                Spacer()
+                HomeButton()
+                    .onTapGesture(perform:{
+                        homeData.refreshHome()
+                        
+                    }
+                    )
+            
+            Spacer()
+            NavigationLink(destination: ProfilePage()) {
+                ProfilePicture()
             }
             Spacer()
-        }
+            }}
+        
     }
-    
-}
+
+
+
 
 
 
@@ -69,4 +60,5 @@ struct Homescreen_Previews: PreviewProvider {
     static var previews: some View {
         Homescreen()
     }
+}
 }
