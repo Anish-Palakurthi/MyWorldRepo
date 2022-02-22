@@ -9,8 +9,7 @@ import SwiftUI
 
 struct Post: View {
     var body: some View {
-        Image("farming")
-        Image("Water")
+        Image("farming").padding(.all)
     }
 }
 

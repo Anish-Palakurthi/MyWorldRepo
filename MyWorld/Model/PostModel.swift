@@ -9,15 +9,14 @@ import Foundation
 import Firebase
 import SwiftUI
 
-struct PostModel: Hashable, Codable {
+struct PostModel: Hashable, Codable, Identifiable {
     var id: Int
     var link: String
     var description: String
     var category: String
-    var subcategory: String
     
     
-    private var imageName: String
+    var imageName: String
     var image: Image{
         Image(imageName)
     }

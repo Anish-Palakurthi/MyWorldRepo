@@ -11,11 +11,12 @@ struct Feed: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
-                ForEach(0..<10) {_ in
-                    Post()
-                        .foregroundColor(.white)
-                        .font(.largeTitle)
+                ForEach(posts){post in
+                    Text("\(post.id), \(post.description)")
+
                 }
+                
+               
             }
         }
     }

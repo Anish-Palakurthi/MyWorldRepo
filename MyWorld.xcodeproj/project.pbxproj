@@ -12,7 +12,6 @@
 		1A11EBE2275FC79A00F34AD9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A11EBE1275FC79A00F34AD9 /* ImagePicker.swift */; };
 		1A1D0FFB27B6B8300055A92D /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0FFA27B6B8300055A92D /* PostModel.swift */; };
 		1A1D0FFD27B6B9910055A92D /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0FFC27B6B9910055A92D /* ModelData.swift */; };
-		1A1D0FFF27B6BDF00055A92D /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0FFE27B6BDEF0055A92D /* sample.json */; };
 		1A1D100227B6BF460055A92D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1D100127B6BF460055A92D /* FirebaseAuth */; };
 		1A1D100427B6BF460055A92D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1D100327B6BF460055A92D /* FirebaseDatabase */; };
 		1A1D100627B6BF460055A92D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1D100527B6BF460055A92D /* FirebaseFirestore */; };
@@ -40,6 +39,7 @@
 		1AD0B7362715D3A10009ACFC /* MyWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0B7352715D3A10009ACFC /* MyWorldUITests.swift */; };
 		1AD0B7382715D3A10009ACFC /* MyWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0B7372715D3A10009ACFC /* MyWorldUITestsLaunchTests.swift */; };
 		1AD0B7452715D5CB0009ACFC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AD0B7442715D5CB0009ACFC /* GoogleService-Info.plist */; };
+		1ADA204627C53FB80055B950 /* testData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ADA204527C53FB80055B950 /* testData.json */; };
 		1AE0D67F27B3186000CDC1E8 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0D67E27B3186000CDC1E8 /* Settings.swift */; };
 		1AE16219279B0C01007FE4BF /* AddCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE16218279B0C01007FE4BF /* AddCard.swift */; };
 		1AE1621B279B0F3F007FE4BF /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE1621A279B0F3F007FE4BF /* CardModel.swift */; };
@@ -68,7 +68,6 @@
 		1A11EBE1275FC79A00F34AD9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		1A1D0FFA27B6B8300055A92D /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		1A1D0FFC27B6B9910055A92D /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		1A1D0FFE27B6BDEF0055A92D /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = SOURCE_ROOT; };
 		1A38B989275A68D100449729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1A4DF144278F3BBD002805DA /* Homescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homescreen.swift; sourceTree = "<group>"; };
 		1A5459242756C37100E34A9E /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -96,6 +95,7 @@
 		1AD0B7352715D3A10009ACFC /* MyWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorldUITests.swift; sourceTree = "<group>"; };
 		1AD0B7372715D3A10009ACFC /* MyWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1AD0B7442715D5CB0009ACFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		1ADA204527C53FB80055B950 /* testData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testData.json; sourceTree = "<group>"; };
 		1AE0D67E27B3186000CDC1E8 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1AE16218279B0C01007FE4BF /* AddCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCard.swift; sourceTree = "<group>"; };
 		1AE1621A279B0F3F007FE4BF /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 			children = (
 				1A38B989275A68D100449729 /* Info.plist */,
 				1AD0B71A2715D39E0009ACFC /* MyWorldApp.swift */,
-				1A1D0FFE27B6BDEF0055A92D /* sample.json */,
+				1ADA204527C53FB80055B950 /* testData.json */,
 				1A11EBDE275FC3D300F34AD9 /* Model */,
 				1A854D1B2734369800C0390F /* Views */,
 				1AD0B7442715D5CB0009ACFC /* GoogleService-Info.plist */,
@@ -342,9 +342,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD0B7222715D3A10009ACFC /* Preview Assets.xcassets in Resources */,
-				1A1D0FFF27B6BDF00055A92D /* sample.json in Resources */,
 				1AD0B71F2715D3A10009ACFC /* Assets.xcassets in Resources */,
 				1AD0B7452715D5CB0009ACFC /* GoogleService-Info.plist in Resources */,
+				1ADA204627C53FB80055B950 /* testData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
