@@ -12,7 +12,11 @@ struct Feed: View {
         ScrollView {
             VStack(spacing: 20) {
                 ForEach(posts){post in
-                    Text("\(post.id), \(post.description)")
+                    VStack{
+                        Image(post.imageName)
+                        Text(post.description)
+                    }
+                    
 
                 }
                 
