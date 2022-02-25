@@ -31,10 +31,11 @@ struct Post: View {
         }.listRowInsets(EdgeInsets())
     }
 }
-
+/*
 
 struct Post_Previews: PreviewProvider {
     static var previews: some View {
-        Post(post: PostModel, screenWidth: UIScreen.main.bounds.size.width)
+        //Post(post: PostModel, screenWidth: UIScreen.main.bounds.size.width)
     }
 }
+*/

@@ -12,7 +12,7 @@ struct Homescreen: View {
     var body: some View {
         VStack{
             HStack{
-   
+                
                 Spacer()
                 Spacer()
                 Spacer()
@@ -22,8 +22,8 @@ struct Homescreen: View {
                     SettingsButton()
                 }
                 .navigationTitle("Settings")
-            
-            Spacer()
+                
+                Spacer()
             }
             
             Feed()
@@ -31,7 +31,7 @@ struct Homescreen: View {
             HStack{
                 
                 
-                Spacer()
+                
                 Spacer()
                 HomeButton()
                     .onTapGesture(perform:{
@@ -39,26 +39,27 @@ struct Homescreen: View {
                         
                     }
                     )
-            
-            Spacer()
-            NavigationLink(destination: ProfilePage()) {
-                ProfilePicture()
-            }
-            Spacer()
+                Spacer()
+                Spacer()
+                NavigationLink(destination: ProfilePage()) {
+                    ProfilePicture()
+                }
+                Spacer()
+                
             }}
         
     }
-
-
-
-
-
-
-
-
-struct Homescreen_Previews: PreviewProvider {
-    static var previews: some View {
-        Homescreen()
+    
+    
+    
+    
+    
+    
+    
+    
+    struct Homescreen_Previews: PreviewProvider {
+        static var previews: some View {
+            Homescreen()
+        }
     }
-}
 }
