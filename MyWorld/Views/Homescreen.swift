@@ -16,6 +16,7 @@ struct Homescreen: View {
                 Spacer()
                 Spacer()
                 Spacer()
+                Text("MyWorld")
                 Spacer()
                 Spacer()
                 NavigationLink(destination: Settings()) {

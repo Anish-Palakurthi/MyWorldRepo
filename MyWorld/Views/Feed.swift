@@ -9,7 +9,6 @@ import SwiftUI
 
 struct Feed: View {
     var body: some View {
-        
         NavigationView {
             GeometryReader { geometry in
                 List {
@@ -22,26 +21,28 @@ struct Feed: View {
                             Text("Story 5")
                         }
                     }
+                    ForEach(posts) {post in
                     VStack(alignment: .leading, spacing: 8) {
                         Spacer()
-                        Image("water")
+                        Image(post.imageName)
                             .resizable()
                             .scaledToFill()
-                            .frame(width: geometry.size.width, height: 250)
+                            .frame(width: 250, height: 250, alignment: .center)
                             .clipped()
-                        Text("test")
+                        Text(post.description)
                             .lineLimit(nil)
                             .font(.system(size: 15))
                             .padding(.leading, 16).padding(.trailing, 16).padding(.bottom, 16)
                     }.listRowInsets(EdgeInsets())
                 }
-            }
+                }}
         }
-    }
-}
+        }}
+
 
 
 /*
+ width: geometry.size.width, height: 250
  ScrollView {
  VStack(spacing: 20) {
  ForEach(posts){post in
