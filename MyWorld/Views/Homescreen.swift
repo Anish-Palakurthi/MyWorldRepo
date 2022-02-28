@@ -14,6 +14,9 @@ struct Homescreen: View {
             HStack{
                 
                 Spacer()
+                Image("Logo")
+                    .resizable()
+                    .frame(width: 60, height: 60)
                 Spacer()
                 Spacer()
                 Text("MyWorld")

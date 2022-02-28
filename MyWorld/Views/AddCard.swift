@@ -12,6 +12,7 @@ struct AddCard: View {
     @StateObject var registerData = RegisterViewModel()
     
     var body: some View {
+        NavigationView{
         VStack{
             HStack{
             Image("Logo")
@@ -68,7 +69,7 @@ struct AddCard: View {
             .padding()
                 
             Spacer()
-            
+            NavigationLink(destination: Homescreen()){
             Button(action: cardData.newCard, label:{
                 Text("Add")
                     .foregroundColor(.white)
@@ -79,18 +80,14 @@ struct AddCard: View {
                     .clipShape(Capsule())
             })
             
-            //.disabled(cardData.cardNumber == "" ? true : false)
-            //.opacity(cardData.cardNumber == "" ? 0.5 : 1)
+            .disabled(cardData.cardNumber == "" ? true : false)
+            .opacity(cardData.cardNumber == "" ? 0.5 : 1)
             
             
+            }.navigationBarTitle("MyWorld")}
         }
-        .fullScreenCover(isPresented: $cardData.cardFilled, content: {
-            
-            Homescreen()
-        })
-    }
 }
-
+}
 struct AddCard_Previews: PreviewProvider {
     static var previews: some View {
         AddCard()

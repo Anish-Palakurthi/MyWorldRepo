@@ -17,7 +17,7 @@ struct ProfilePicture: View {
             Image(systemName: "person")
                 .font(.system(size: 65))
                 .foregroundColor(.black)
-                .frame(width: 50, height: 50)
+                .frame(width: 30, height: 30)
                 .background(Color.white)
                 .clipShape(Circle())
                 }
@@ -25,7 +25,7 @@ struct ProfilePicture: View {
                 Image(uiImage: UIImage(data: registerData.image_Data)!)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 50, height: 50)
+                    .frame(width: 30, height: 30)
                     .clipShape(Circle())
                 }
             }

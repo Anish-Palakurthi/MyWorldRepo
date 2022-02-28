@@ -39,30 +39,6 @@ struct Feed: View {
         }
         }}
 
-
-
-/*
- width: geometry.size.width, height: 250
- ScrollView {
- VStack(spacing: 20) {
- ForEach(posts){post in
- VStack{
- Image(post.imageName)
- .frame(width: 500, height: 500, alignment: .center)
- Text(post.description)
- }
- 
- 
- }
- 
- 
- }
- }
- */
-
-/*
- 
- */
 struct Feed_Previews: PreviewProvider {
     static var previews: some View {
         Feed()
