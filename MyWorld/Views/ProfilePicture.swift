@@ -27,7 +27,7 @@ struct ProfilePicture: View {
                 Image(uiImage: UIImage(data: registerData.image_Data)!)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 30, height: 30)
+                    .frame(width: 30, height: 20)
                 //.clipShape(Circle())
             }
         }
