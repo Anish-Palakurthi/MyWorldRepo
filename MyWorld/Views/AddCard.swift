@@ -15,18 +15,21 @@ struct AddCard: View {
         NavigationView{
             VStack{
                 HStack{
+                    Spacer()
                     Image("Logo")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 70, height: 70, alignment: .topLeading)
-                        .padding()
                     Spacer()
                     Text("MyWorld")
                         .font(Font.custom("Cabin-Regular", size: 40))
                         .fontWeight(.heavy)
                         .foregroundColor(.black)
+                        .padding(.trailing, 20.0)
+                        
                     Spacer()
                     ProfilePicture()
+                        .padding(.trailing, 12.0)
                     Spacer()
                     
                     
