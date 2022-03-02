@@ -13,22 +13,18 @@ struct ProfilePicture: View {
         ZStack{
             if registerData.image_Data.count == 0
             {
-                
                 Image(systemName: "person")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                //.font(.system(size: 30))
                     .foregroundColor(.black)
                     .frame(width: 30, height: 25)
                     .background(Color.white)
-                //.clipShape(Circle())
             }
             else {
                 Image(uiImage: UIImage(data: registerData.image_Data)!)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 30, height: 20)
-                //.clipShape(Circle())
             }
         }
         

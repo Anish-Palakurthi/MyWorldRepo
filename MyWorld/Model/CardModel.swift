@@ -66,10 +66,10 @@ class CardModel : ObservableObject{
                     return
                 }
             }
-        let docData: [String: Any] = [
-            "cardNumber": cardNumber,
-        ]
+        //let docData: [String: Any] = [
+           // "cardNumber": cardNumber,
+        //]
         
-        let db = Firestore.firestore()
+        //let db = Firestore.firestore()
     }
 }

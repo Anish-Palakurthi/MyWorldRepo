@@ -53,7 +53,7 @@ struct AddCard: View {
                 Spacer()
                 
                 NavigationLink(destination: Homescreen()){
-                    Button(action: cardData.newCard, label:{
+                    //Button(action: cardData.newCard, label:{
                         Text("Add")
                             .foregroundColor(.white)
                             .fontWeight(.bold)
@@ -61,7 +61,8 @@ struct AddCard: View {
                             .frame(width: UIScreen.main.bounds.width - 100)
                             .background(Color("Green"))
                             .clipShape(Capsule())
-                    })
+                    }
+              //)
                     
                         .disabled(cardData.cardNumber == "" ? true : false)
                         .opacity(cardData.cardNumber == "" ? 0.5 : 1)
@@ -75,7 +76,7 @@ struct AddCard: View {
             }
         }
     }
-}
+
 struct AddCard_Previews: PreviewProvider {
     static var previews: some View {
         AddCard()
