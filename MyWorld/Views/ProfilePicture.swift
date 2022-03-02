@@ -9,27 +9,29 @@ import SwiftUI
 
 struct ProfilePicture: View {
     @StateObject var registerData = RegisterViewModel()
-    var body: some View {        
+    var body: some View {
         ZStack{
             if registerData.image_Data.count == 0
             {
-        
-            Image(systemName: "person")
-                .font(.system(size: 65))
-                .foregroundColor(.black)
-                .frame(width: 30, height: 30)
-                .background(Color.white)
-                .clipShape(Circle())
-                }
+                
+                Image(systemName: "person")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                //.font(.system(size: 30))
+                    .foregroundColor(.black)
+                    .frame(width: 30, height: 25)
+                    .background(Color.white)
+                //.clipShape(Circle())
+            }
             else {
                 Image(uiImage: UIImage(data: registerData.image_Data)!)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 30, height: 30)
-                    .clipShape(Circle())
-                }
+                //.clipShape(Circle())
             }
-            
+        }
+        
         .padding(.top)
     }
 }

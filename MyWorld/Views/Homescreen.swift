@@ -12,12 +12,10 @@ struct Homescreen: View {
     var body: some View {
         VStack{
             HStack{
-                
                 Spacer()
                 Image("Logo")
                     .resizable()
                     .frame(width: 60, height: 60)
-                Spacer()
                 Spacer()
                 Text("MyWorld")
                 Spacer()
@@ -25,10 +23,12 @@ struct Homescreen: View {
                 NavigationLink(destination: Settings()) {
                     SettingsButton()
                 }
-                .navigationTitle("Settings")
+                
                 
                 Spacer()
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
             
             Feed()
             Spacer()
@@ -46,6 +46,7 @@ struct Homescreen: View {
                 Spacer()
                 Spacer()
                 NavigationLink(destination: ProfilePage()) {
+                    
                     ProfilePicture()
                 }
                 Spacer()

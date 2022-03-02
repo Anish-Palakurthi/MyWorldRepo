@@ -26,27 +26,9 @@ struct AddCard: View {
                     .fontWeight(.heavy)
                     .foregroundColor(.black)
                 Spacer()
-                ZStack{
-                    if registerData.image_Data.count == 0
-                    {
-                
-                    Image(systemName: "person")
-                        .font(.system(size: 65))
-                        .foregroundColor(.black)
-                        .frame(width: 60, height: 60)
-                        .background(Color.white)
-                        .clipShape(Circle())
-                        }
-                    else {
-                        Image(uiImage: UIImage(data: registerData.image_Data)!)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 60, height: 60)
-                            .clipShape(Circle())
-                        }
-                    }
+                ProfilePicture()
                     
-                .padding()
+         
                 
         }
             Spacer()
