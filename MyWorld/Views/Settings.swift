@@ -9,7 +9,12 @@ import SwiftUI
 
 struct Settings: View {
     var body: some View {
-        Text("Settings page")
+        VStack{
+            Text("Settings")
+                .font(Font.custom("Cabin-Regular", size: 40))
+                .fontWeight(.heavy)
+                .foregroundColor(.black)
+        }
     }
 }
 

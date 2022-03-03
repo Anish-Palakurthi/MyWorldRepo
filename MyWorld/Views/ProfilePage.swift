@@ -8,8 +8,33 @@
 import SwiftUI
 
 struct ProfilePage: View {
+    @StateObject var registerData = RegisterViewModel()
+    
+    
     var body: some View {
-        Text("Profile Page")
+        VStack{
+            Spacer()
+            ZStack{
+                if registerData.image_Data.count == 0
+                {
+                    Image(systemName: "person")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .foregroundColor(.black)
+                        .frame(width: 90, height: 90)
+                        .background(Color.white)
+                }
+                else {
+                    Image(uiImage: UIImage(data: registerData.image_Data)!)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 90, height: 90)
+                }
+            }
+            Spacer()
+            
+            
+        }
     }
 }
 

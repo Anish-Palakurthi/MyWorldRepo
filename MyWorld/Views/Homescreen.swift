@@ -9,6 +9,7 @@ import SwiftUI
 struct Homescreen: View {
     @StateObject var registerData = RegisterViewModel()
     @StateObject var homeData = HomeScreenModel()
+    
     var body: some View {
         VStack{
             HStack{
@@ -18,6 +19,9 @@ struct Homescreen: View {
                     .frame(width: 60, height: 60)
                 Spacer()
                 Text("MyWorld")
+                    .font(Font.custom("Cabin-Regular", size: 40))
+                    .fontWeight(.heavy)
+                    .foregroundColor(.black)
                 Spacer()
                 Spacer()
                 NavigationLink(destination: Settings()) {
