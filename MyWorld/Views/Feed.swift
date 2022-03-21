@@ -12,17 +12,8 @@ struct Feed: View {
         NavigationView {
             GeometryReader { geometry in
                 List {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
-                            Text("Story 1")
-                            Text("Story 2")
-                            Text("Story 3")
-                            Text("Story 4")
-                            Text("Story 5")
-                        }
-                    }
                     ForEach(posts) {post in
-                        VStack(alignment: .leading, spacing: 8) {
+                        VStack(alignment: .center, spacing: 8) {
                             Spacer()
                             Link(destination: URL(string: post.link)!){
                                 Image(post.imageName)
@@ -41,12 +32,7 @@ struct Feed: View {
         }
     }}
 
-/*
- Link(destination: URL(string: "https://www.simpleswiftguide.com")!) {
- Image(systemName: "paperplane")
- .font(.largeTitle)
- }
- */
+
 
 struct Feed_Previews: PreviewProvider {
     static var previews: some View {

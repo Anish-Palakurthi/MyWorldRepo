@@ -16,8 +16,8 @@ struct ContentView: View {
     var body: some View{
         NavigationView{
             VStack{
-                //Homescreen()
-                Login()
+                Homescreen()
+                //Login()
             }
         }
         
