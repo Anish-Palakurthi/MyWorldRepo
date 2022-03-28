@@ -8,7 +8,6 @@
 import SwiftUI
 import FirebaseAuth
 import Firebase
-    
 
 struct ContentView: View {
     
@@ -23,44 +22,21 @@ struct ContentView: View {
         
         
     }
-    /*
-    init() {
-           FirebaseApp.configure()
-       }
     
-    @ObservedObject var userAuth: UserAuth = UserAuth()
-    @ViewBuilder
-    var body: some View{
-        
-        if !userAuth.isLoggedin{
-            
-                NavigationView{
-                    VStack{
-                        Homescreen()
-                    }
-                }
-                .navigationBarHidden(true)
-            }
-        else {
-            Register()
+struct FirebaseLoginApp: App{
+    init(){
+        FirebaseApp.configure()
+    }
+    var body: some Scene{
+        WindowGroup{
+            ContentView()
         }
-}
-}
-
-class UserAuth: ObservableObject {
-    @Published var isLoggedin = false     // published property to update view
-
-    func login() {
-        // login request... on success:
-        self.isLoggedin = true
     }
-
-    func logout() {
-        // login request... on success:
-        self.isLoggedin = false
-    }
+    
+    
 }
-*/
+
+
 struct ContentView_Previews: PreviewProvider{
     static var previews: some View{
         ContentView()
