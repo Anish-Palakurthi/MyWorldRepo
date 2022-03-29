@@ -12,6 +12,7 @@ import Firebase
 @main
 struct MyWorldApp: App {
     @UIApplicationDelegateAdaptor(Appdelegate.self) var delegate
+    var network = Network()
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -19,17 +20,11 @@ struct MyWorldApp: App {
                     
                     Auth.auth().canHandle(url)
                 })
-    
-        }
-    }
-    
-    var network = Network()
-    var body: some Scene{
-        WindowGroup{
-            ContentView()
                 .environmentObject(network)
+    
         }
     }
+    
 }
 
 class Appdelegate : NSObject, UIApplicationDelegate{
