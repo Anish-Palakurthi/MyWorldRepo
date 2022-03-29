@@ -13,13 +13,14 @@ struct ContentView: View {
     @EnvironmentObject var network: Network
     var status = false
     var body: some View{
-        /*
+        
         NavigationView{
             VStack{
                 //Homescreen()
-                //Login()
+                Login()
             }
-         */
+         
+        /*
         ScrollView{
             Text("All users")
                 .font(.title).bold()
@@ -48,9 +49,11 @@ struct ContentView: View {
             network.getUsers()
         }
         }
-        
+        */
         
     }
+    }
+}
     
 struct FirebaseLoginApp: App{
     init(){

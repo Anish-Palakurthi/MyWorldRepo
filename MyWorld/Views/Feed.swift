@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Feed: View {
+    @State private var showSafari: Bool = false
     var body: some View {
         NavigationView {
             GeometryReader { geometry in
