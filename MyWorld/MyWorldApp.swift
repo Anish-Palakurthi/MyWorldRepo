@@ -22,6 +22,14 @@ struct MyWorldApp: App {
     
         }
     }
+    
+    var network = Network()
+    var body: some Scene{
+        WindowGroup{
+            ContentView()
+                .environmentObject(network)
+        }
+    }
 }
 
 class Appdelegate : NSObject, UIApplicationDelegate{

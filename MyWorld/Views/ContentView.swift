@@ -10,7 +10,7 @@ import FirebaseAuth
 import Firebase
 
 struct ContentView: View {
-    
+    @EnvironmentObject var network: Network
     var status = false
     var body: some View{
         NavigationView{
