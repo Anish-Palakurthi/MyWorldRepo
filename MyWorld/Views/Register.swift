@@ -10,6 +10,10 @@ import SwiftUI
 struct Register: View {
     @State var selectedData = Date()
     
+    @AppStorage("name") var name = ""
+    @AppStorage("zipcode") var zipcode = ""
+    //@AppStorage("dob") var dob = ""
+    
     
     @StateObject var registerData = RegisterViewModel()
     
@@ -84,7 +88,15 @@ struct Register: View {
             
             else {
             
-            Button(action: registerData.register, label:{
+                Button(action: {
+                    registerData.register()
+                    name = registerData.name
+                    zipcode = registerData.zipcode
+                    //dob = registerData.dob
+                    
+                    
+                    
+                }, label:{
                 Text("Register")
                     .foregroundColor(.white)
                     .fontWeight(.bold)

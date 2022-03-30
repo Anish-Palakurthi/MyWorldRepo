@@ -10,6 +10,7 @@ import SwiftUI
 struct AddCard: View {
     @StateObject var cardData = CardModel()
     @StateObject var registerData = RegisterViewModel()
+    @AppStorage("cardNumber") var cardNumber = ""
     
     var body: some View {
         NavigationView{
@@ -69,6 +70,9 @@ struct AddCard: View {
                     
                         .disabled(cardData.cardNumber == "" ? true : false)
                         .opacity(cardData.cardNumber == "" ? 0.5 : 1)
+                        .onTapGesture {
+                            cardNumber = cardData.cardNumber
+                        }
                     
                     
                 }
