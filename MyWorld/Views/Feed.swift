@@ -10,10 +10,9 @@ import SwiftUI
 struct Feed: View {
     @State private var showSafari: Bool = false
     var body: some View {
-        NavigationView {
-            GeometryReader { geometry in
-                List {
-                    ForEach(posts) {post in
+        ScrollView {
+        
+                        ForEach(posts) {post in
                         VStack(alignment: .center, spacing: 8) {
                             Spacer()
                             Link(destination: URL(string: post.link)!){
@@ -28,8 +27,19 @@ struct Feed: View {
                                     .padding(.leading, 16).padding(.trailing, 16).padding(.bottom, 16)
                             }
                         }.listRowInsets(EdgeInsets())
+                            .id(post)
+                        
                     }
-                }}
+            
+                
+                
+            ScrollViewReader { value in
+                Button("Jump to Top"){
+                    value.scrollTo(1, anchor:.top)
+                }
+            
+            
+        }
         }
     }}
 

@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ProfilePage: View {
     @StateObject var registerData = RegisterViewModel()
+    @StateObject var cardData = CardModel()
     
     
     var body: some View {
         VStack{
-            Spacer()
             ZStack{
                 if registerData.image_Data.count == 0
                 {
@@ -31,6 +31,12 @@ struct ProfilePage: View {
                         .frame(width: 90, height: 90)
                 }
             }
+            Spacer()
+            Text("Username:" + registerData.name)
+            Spacer()
+            Text("Current Footprint: " + registerData.footprint)
+            Spacer()
+            Text("Current Card Number:" + cardData.cardNumber)
             Spacer()
             
             

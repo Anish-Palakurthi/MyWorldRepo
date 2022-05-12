@@ -23,10 +23,10 @@ class FirestoreManager: ObservableObject{
     func createProfile(profileName: String){
         let db = Firestore.firestore()
         
-        let docRef = db.collection("myworld-cd1fb").document("Profiles")
+        let docRef = db.collection("myworld-cd1fb").document("")
         
         docRef.setData(["name": profileName]){ error in
-            if let error = error{
+            if let error = error {
                 print("Error writing document: \(error)")}
             else{
                 print("Document successfully written!")
@@ -34,11 +34,10 @@ class FirestoreManager: ObservableObject{
             }
             
         }
-        
-        
+    
+    
     }
-    
-    
+        
     func fetchName(){
         
         let db = Firestore.firestore()

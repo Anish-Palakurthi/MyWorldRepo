@@ -1,7 +1,7 @@
 [
     {
         "id":0,
-        "link": "www.sstx.org",
+        "link": "https://classroom.google.com/u/0/h",
         "description": "DESCtest1",
         "category": "test",
         "imageName": "food"
@@ -9,24 +9,24 @@
 
     {
         "id":1,
-        "link":"www.sstx.org",
-        "description": "DESCtest1",
+        "link":"https://classroom.google.com/u/0/h",
+        "description": "DESCtest2",
         "category": "test",
         "imageName": "water"
     },
 
     {
         "id":2,
-        "link": "www.sstx.org",
-        "description": "DESCtest1",
+        "link": "https://classroom.google.com/u/0/h",
+        "description": "DESCtest3",
         "category": "test",
         "imageName": "air"
     },
 
     {
         "id":3,
-        "link": "www.sstx.org",
-        "description": "DESCtest1",
+        "link": "https://classroom.google.com/u/0/h",
+        "description": "DESCtest4",
         "category": "test",
         "imageName": "car"
     }

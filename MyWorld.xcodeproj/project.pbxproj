@@ -46,6 +46,7 @@
 		1AE0D67F27B3186000CDC1E8 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0D67E27B3186000CDC1E8 /* Settings.swift */; };
 		1AE16219279B0C01007FE4BF /* AddCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE16218279B0C01007FE4BF /* AddCard.swift */; };
 		1AE1621B279B0F3F007FE4BF /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE1621A279B0F3F007FE4BF /* CardModel.swift */; };
+		1AFE9B61282C52760055C253 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE9B60282C52760055C253 /* SFSafariViewWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		1AE0D67E27B3186000CDC1E8 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1AE16218279B0C01007FE4BF /* AddCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCard.swift; sourceTree = "<group>"; };
 		1AE1621A279B0F3F007FE4BF /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		1AFE9B60282C52760055C253 /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFSafariViewWrapper.swift; path = MyWorld/SFSafariViewWrapper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 				1ADA204527C53FB80055B950 /* testData.json */,
 				1AD5BD1A27F34EB8000E3BFA /* FirestoreManager.swift */,
 				1AD5BD1C27F354BF000E3BFA /* Network.swift */,
+				1AFE9B60282C52760055C253 /* SFSafariViewWrapper.swift */,
 				1A283E5327F35CAD003ED89C /* StorageManager.swift */,
 				1A11EBDE275FC3D300F34AD9 /* Model */,
 				1A854D1B2734369800C0390F /* Views */,
@@ -387,6 +390,7 @@
 				1A5459252756C37100E34A9E /* Login.swift in Sources */,
 				1AE0D67F27B3186000CDC1E8 /* Settings.swift in Sources */,
 				1A66EB8127A1E2DC00867A64 /* HomeScreenModel.swift in Sources */,
+				1AFE9B61282C52760055C253 /* SFSafariViewWrapper.swift in Sources */,
 				1ACE899D27B55D8B00C0FE2A /* HomeButton.swift in Sources */,
 				1ACE89A127B55E1C00C0FE2A /* LogoIcon.swift in Sources */,
 				1ACE899B27B55C6B00C0FE2A /* ProfilePicture.swift in Sources */,
